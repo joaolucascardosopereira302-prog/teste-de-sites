@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advocacia Pereira</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 25px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #d4af37;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(17,24,39,0.85), rgba(17,24,39,0.85)),
+      url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 60px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: #d4af37;
+      color: #111827;
+      padding: 15px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #b8962f;
+    }
+
+    section {
+      padding: 70px 60px;
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #111827;
+    }
+
+    .sobre {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #d4af37;
+      margin-bottom: 15px;
+    }
+
+    .contato {
+      background: #111827;
+      color: white;
+      text-align: center;
+    }
+
+    .contato p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #0b0f19;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      section {
+        padding: 50px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Advocacia Pereira</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#areas">Áreas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Atuação Jurídica com Seriedade e Compromisso</h2>
+    <p>
+      Escritório especializado em soluções jurídicas eficientes, atendimento humanizado
+      e defesa dos direitos dos clientes com ética, transparência e responsabilidade.
+    </p>
+    <a class="btn" href="#contato">Agendar Atendimento</a>
+  </section>
+
+  <section id="sobre">
+    <h2 class="titulo">Sobre o Escritório</h2>
+    <p class="sobre">
+      A Advocacia Pereira atua com dedicação na defesa dos interesses de seus clientes,
+      oferecendo atendimento personalizado e análise cuidadosa de cada caso.
+      Nosso compromisso é buscar soluções jurídicas seguras, claras e eficazes.
+    </p>
+  </section>
+
+  <section id="areas">
+    <h2 class="titulo">Áreas de Atuação</h2>
+
+    <div class="areas">
+      <div class="card">
+        <h3>Direito Civil</h3>
+        <p>Ações indenizatórias, contratos, cobranças, responsabilidade civil e conflitos patrimoniais.</p>
+      </div>
+
+      <div class="card">
+        <h3>Direito de Família</h3>
+        <p>Divórcio, guarda, pensão alimentícia, reconhecimento de paternidade e união estável.</p>
+      </div>
+
+      <div class="card">
+        <h3>Direito Previdenciário</h3>
+        <p>Aposentadorias, pensão por morte, BPC/LOAS, revisões e benefícios do INSS.</p>
+      </div>
+
+      <div class="card">
+        <h3>Inventário e Sucessões</h3>
+        <p>Inventário judicial, partilha de bens, alvarás, sobrepartilha e regularização sucessória.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2 class="titulo" style="color:white;">Contato</h2>
+    <p><strong>Telefone/WhatsApp:</strong> (34) 000000000</p>
+    <p><strong>E-mail:</strong> contato@emailfake.com</p>
+    <p><strong>Endereço:</strong> Rua Jurassic Park, 88 - Terra do Nunca</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Advocacia Pereira - Todos os direitos reservados.</p>
+    <p>Site meramente informativo, conforme normas da OAB.</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/5534000000000" target="_blank">
+    WhatsApp
+  </a>
+
+</body>
+</html>
