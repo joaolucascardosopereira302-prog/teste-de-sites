@@ -1,0 +1,279 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salão Bella Beauty</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff5f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #d63384, #ff85b3);
+      color: white;
+      padding: 25px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .banner {
+      height: 500px;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .banner h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .banner p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #d63384;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ad1f66;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 34px;
+      color: #d63384;
+      margin-bottom: 40px;
+    }
+
+    .sobre {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      color: #d63384;
+      margin-bottom: 15px;
+    }
+
+    .precos {
+      background: #ffe1ec;
+    }
+
+    table {
+      width: 100%;
+      background: white;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    table th, table td {
+      padding: 18px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    table th {
+      background: #d63384;
+      color: white;
+    }
+
+    .contato {
+      text-align: center;
+    }
+
+    .contato p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #d63384;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      nav a {
+        margin: 8px;
+      }
+
+      .banner h2 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pereira Beauty</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#precos">Preços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <div>
+      <h2>Realce sua beleza</h2>
+      <p>Cabelos, unhas, maquiagem e cuidados especiais para você.</p>
+      <a href="#contato" class="btn">Agendar horário</a>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <h2 class="titulo">Sobre o Salão</h2>
+    <p class="sobre">
+      O Bella Beauty é um salão de beleza moderno, criado para oferecer conforto,
+      qualidade e atendimento personalizado. Nossa equipe é especializada em cortes,
+      coloração, escova, hidratação, manicure, maquiagem e muito mais.
+    </p>
+  </section>
+
+  <section id="servicos">
+    <h2 class="titulo">Nossos Serviços</h2>
+
+    <div class="servicos">
+      <div class="card">
+        <h3>Corte Feminino</h3>
+        <p>Cortes modernos, clássicos e personalizados.</p>
+      </div>
+
+      <div class="card">
+        <h3>Coloração</h3>
+        <p>Mechas, luzes, tintura e transformação capilar.</p>
+      </div>
+
+      <div class="card">
+        <h3>Manicure</h3>
+        <p>Unhas tradicionais, decoradas e cuidados especiais.</p>
+      </div>
+
+      <div class="card">
+        <h3>Maquiagem</h3>
+        <p>Produção para festas, casamentos e eventos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="precos" class="precos">
+    <h2 class="titulo">Tabela de Preços</h2>
+
+    <table>
+      <tr>
+        <th>Serviço</th>
+        <th>Valor</th>
+      </tr>
+      <tr>
+        <td>Corte Feminino</td>
+        <td>R$ 60,00</td>
+      </tr>
+      <tr>
+        <td>Escova</td>
+        <td>R$ 45,00</td>
+      </tr>
+      <tr>
+        <td>Hidratação</td>
+        <td>R$ 80,00</td>
+      </tr>
+      <tr>
+        <td>Manicure</td>
+        <td>R$ 35,00</td>
+      </tr>
+      <tr>
+        <td>Maquiagem</td>
+        <td>R$ 120,00</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2 class="titulo">Agende seu Horário</h2>
+    <p><strong>WhatsApp:</strong> (34) 000000000</p>
+    <p><strong>Endereço:</strong> Rua Jurassic Park, 88 - Terra do Nunca</p>
+    <p><strong>Instagram:</strong> @%¨&00#p</p>
+    <br>
+    <a class="btn" href="https://wa.me/5534000000000" target="_blank">
+      Chamar no WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Bella Beauty - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
