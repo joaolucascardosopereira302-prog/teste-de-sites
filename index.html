@@ -1,0 +1,203 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Feliz - Pet Shop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+}
+
+header{
+    background:#28a745;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:32px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+    height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.banner h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.botao{
+    background:#28a745;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 10%;
+}
+
+.titulo{
+    text-align:center;
+    color:#28a745;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#28a745;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+}
+
+.contato{
+    text-align:center;
+}
+
+.contato p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#28a745;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🐾 Pereira Pet</h1>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <div>
+        <h2>Seu Pet Merece o Melhor</h2>
+        <p>Banho, tosa, consultas e muito carinho para seu amigo.</p>
+        <a href="#contato" class="botao">Agendar Atendimento</a>
+    </div>
+</section>
+
+<section id="sobre">
+    <h2 class="titulo">Sobre Nós</h2>
+
+    <p style="text-align:center; max-width:900px; margin:auto; line-height:1.8;">
+        A Pet Feliz oferece serviços completos para cães e gatos.
+        Nossa equipe é especializada em cuidados, higiene e bem-estar,
+        garantindo conforto e segurança para seu animal de estimação.
+    </p>
+</section>
+
+<section id="servicos">
+    <h2 class="titulo">Nossos Serviços</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🛁 Banho</h3>
+            <p>Banho com produtos de alta qualidade para o seu pet.</p>
+        </div>
+
+        <div class="card">
+            <h3>✂️ Tosa</h3>
+            <p>Tosa higiênica e estética realizada por profissionais.</p>
+        </div>
+
+        <div class="card">
+            <h3>🩺 Consultas</h3>
+            <p>Atendimento veterinário especializado.</p>
+        </div>
+
+        <div class="card">
+            <h3>🦴 Produtos</h3>
+            <p>Rações, brinquedos, medicamentos e acessórios.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato" class="contato">
+
+    <h2 class="titulo">Contato</h2>
+
+    <p>📞 (34) 000000000</p>
+    <p>📍 Rua Jurassic Park, 88 - Terra do Nunca</p>
+    <p>📧 002@#meee</p>
+
+    <br>
+
+    <a href="https://wa.me/553400000000" class="botao">
+        Falar no WhatsApp
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 Pet Feliz - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
